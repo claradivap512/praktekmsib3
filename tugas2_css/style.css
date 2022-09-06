@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+}
+
+.header{
+    background-image: url("img/Tumblr_l_284215094444752.jpg");
+    padding: 65px;
+    color: #D48793;
+}
+
+.header h1{
+    line-height: 5pt;
+}
+
+h1, h2, p, a{
+    font-family: 'Playfair Display', serif;
+}
+
+div#navbar{
+    overflow: hidden;
+    background-color: #669933;
+}
+
+div#navbar a{
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px;
+    float: left;
+    display: block;
+}
+
+div#navbar a:hover{
+    background-color: white;
+    color: #669933;
+}
+
+/*line 38-71 : the important bits of making columns*/
+.row{
+    background-color: white;
+    float: left;
+}
+
+.column{
+    float: left;
+    padding: 10px;
+    line-height: 30px;
+}
+
+.column.side{
+    width: 25%;
+}
+
+.column.middle{
+    width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.column.side img{
+    width: 80%;
+}
+
+table{
+    background-color:  	#E8E8E8;
+    font-family: 'Playfair Display', serif;
+}
+
+.title{
+    text-align: center;
+    background-color: #D48793;
+    text-transform: uppercase;
+}
+
+.hangul{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.footer{
+    background-color: olivedrab;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 3%;
+}
